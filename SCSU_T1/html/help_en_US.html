@@ -1,0 +1,166 @@
+<header layout="column" layout-fill class="topbar-wrapper">
+  <prm-topbar>
+  </prm-topbar>
+</header>
+
+<md-content class="main _md md-primoExplore-theme layout-align-center-start layout-row flex" ng-if="!ctrl.isSearchDone()" layout="row" layout-align="center start" flex>
+
+  <div flex="0" flex-md="10" flex-lg="25" flex-xl="30" ng-class="{'flex-lgPlus-30': ctrl.mediaQueries.lgPlus}" class="flex-xl-30 flex-md-10 flex-lg-25 flex-0"></div>
+
+  <!-- ##### BEGIN HELP PAGE CONTENT ##### -->
+
+<md-content layout-xs="column" layout="row" class="display-block-xs md-padding">
+
+    <div flex-xs="100" flex="40" layout="column">
+        <md-card class="default-card" id="cscu-toc-card">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Help Contents</span>
+                </md-card-title-text>
+            </md-card-title>
+            
+            <md-card-content>
+              <ul>
+                <li><a href="#cscu-authentication-card">Signing In</a></li>
+                <li><a href="#cscu-signin-errors-card">Sign-In Errors</a></li>
+                <!-- Additional examples
+                <li><a href="#cscu-topic1-card">Topic 1</a></li>
+                <li><a href="#cscu-topic2-card">Topic 2</a></li>
+                -->
+              </ul>
+
+              <!--  This may be useful here later
+                <a href="https://goo.gl/forms/DkRaNccNygbs6maK2" class="arrow-link">
+                    Let us know what you think!
+                    <prm-icon link-arrow>
+                        <md-icon md-svg-icon="./images/chevron-right.svg"></md-icon>
+                    </prm-icon>
+                </a>
+              -->
+
+            </md-card-content>
+        </md-card>
+
+    </div>
+    <div flex-xs="100" flex="60" layout="column">
+
+        <md-card class="default-card" id="cscu-authentication-card">
+            <md-card-title> 
+              <md-card-title-text>
+                <span class="md-headline">Signing In</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <ol>
+              
+                <li>
+                  <p>Like most websites, sign in can be found on the upper right.  Hover over "Guest", then click SIGN IN.</p>
+                  <img class="cscu-help-doc" id="cscu-authentication-login-desktop-corner" alt="my auth image" ng-src="custom/SCSU_V1/img/login-desktop-corner.png" src="custom/SCSU_V1/img/login-desktop-corner.png">
+                </li>
+
+                <li>
+                  <p>For your phone or tablet, SIGN IN will be behind the dots.</p>
+                  <img class="cscu-help-doc" id="cscu-authentication-mobile-signin-dots" alt="my auth image" ng-src="custom/SCSU_V1/img/mobile-signin-dots.PNG" src="custom/SCSU_V1/img/mobile-signin-dots.PNG">
+                </li>
+
+                <li>
+                  <p>Sometimes, when an advanced service is available to you, a sign-in prompt will appear.  Click or tap the sign in icon to login.</p>
+                  <img class="cscu-help-doc" id="cscu-authentication-highlight-signin" alt="my auth image" ng-src="custom/SCSU_V1/img/highlight-signin.PNG" src="custom/SCSU_V1/img/highlight-signin.PNG">
+                </li>
+
+                <li>
+                  <p>If you are a student, instructor or staff member at Southern, use the first option.  Everyone else should use the second.</p>
+                  <img class="cscu-help-doc" id="cscu-authentication-help-login-box" alt="my auth image" ng-src="custom/SCSU_V1/img/login-box-desktop.png" src="custom/SCSU_V1/img/login-box-desktop.png">   
+                </li>
+
+                <li>
+                  <p>Fill in your SCSU account ID and password.</p>
+                  <img class="cscu-help-doc" id="cscu-authentication-help-login-sailpoint-login-form" alt="my auth image" ng-src="custom/SCSU_V1/img/sailpoint-login-form.PNG" src="custom/SCSU_V1/img/sailpoint-login-form.PNG">   
+                </li>
+
+                <li>
+                  <p>You should now have access to online full-text articles, materials requests, your library account, your saved searches and all advanced library services.</p>
+                </li>
+
+
+              </ol>              
+   
+            </md-card-content>
+        </md-card>
+
+        <md-card class="default-card" id="cscu-signin-errors-card">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Sign In Errors</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p> Sign in problems should be rare. Match your screen to one of the pictures here, and follow our suggestions to handle the issue.</p>
+              <ol>
+                <li><strong>Authentication failed</strong>
+                  <img class="cscu-help-doc" id="cscu-authentication-sailpoint-auth-failed" alt="my auth image" ng-src="custom/SCSU_V1/img/sailpoint-auth-failed.PNG" src="custom/SCSU_V1/img/sailpoint-auth-failed.PNG">
+                  <p>If you type in the wrong username or password, you'll get a simple authentication error.  Try again.  Make sure you're typing your username correctly and that you haven't set CAPS LOCK on your keyboard.</p>
+                </li>
+
+
+                <li><strong>Error page</strong> (very rare)
+                  <img class="cscu-help-doc" id="cscu-authentication-sailpoint-conflict-error" alt="my auth image" ng-src="custom/SCSU_V1/img/sailpoint-conflict-error.PNG" src="custom/SCSU_V1/img/sailpoint-conflict-error.PNG">
+                  <p>The library system rejected your sign in request. This has been seen to happen when a library patron has not yet been loaded into the system, or when security settings have been improperly configured on a particular workstation. If necessary, a librarian can create temporary account for you and help sort out the problem.</p>
+                </li>
+
+                <li><strong>Something Else</strong>
+                  <img class="cscu-help-doc" id="cscu-authentication-yikes" alt="my auth image" ng-src="custom/SCSU_V1/img/yikes.jpg" src="custom/SCSU_V1/img/yikes.jpg">
+                  <p>You've encountered something we don't know about. Contact your local IT Help Desk, and we'll help you get moving again.</p>
+                </li>
+
+              </ol>              
+   
+            </md-card-content>
+        </md-card>
+
+
+        <!-- Additional example cards
+        <md-card class="default-card" id="cscu-topic1-card">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Topic 1</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p>
+                Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Nam adipiscing.
+Vivamus in erat ut urna cursus vestibulum. Phasellus a est. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Maecenas nec odio et ante tincidunt tempus.
+              </p>
+              <p>
+Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vestibulum dapibus nunc ac augue. Aenean ut eros et nisl sagittis vestibulum. Fusce ac felis sit amet ligula pharetra condimentum.
+              </p>
+
+            </md-card-content>
+        </md-card>
+
+        <md-card class="default-card" id="cscu-topic2-card">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Topic 2</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p>
+                Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Nam adipiscing.
+Vivamus in erat ut urna cursus vestibulum. Phasellus a est. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Maecenas nec odio et ante tincidunt tempus.
+              </p>
+              <p>
+Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vestibulum dapibus nunc ac augue. Aenean ut eros et nisl sagittis vestibulum. Fusce ac felis sit amet ligula pharetra condimentum.
+              </p>
+              <img class="cscu-help-doc" id="cscu-authentication-help-login-box" alt="my auth image" ng-src="custom/SCSU_V1/img/login-box-desktop.png" src="custom/SCSU_V1/img/login-box-desktop.png">   
+            </md-card-content>
+        </md-card>
+        -->
+    </div>
+</md-content>
+
+  <!-- ##### END HELP PAGE CONTENT ##### -->
+
+  <div flex="0" flex-md="10" flex-lg="25" flex-xl="30" ng-class="{'flex-lgPlus-30': ctrl.mediaQueries.lgPlus}" class="flex-xl-30 flex-md-10 flex-lg-25 flex-0"></div>
+
+</md-content>

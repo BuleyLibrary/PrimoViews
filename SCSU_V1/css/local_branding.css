@@ -1,0 +1,22 @@
+prm-topbar {
+  height: 90px;  /* Increase Nav-bar height to accomodate logo */
+}
+/* Temporary bug patch to remove the Collections hyperlink from the Full Display */
+prm-record-collection-paths {
+  display: none;
+}
+
+/* Override the Consortium COVID-19 message (hide it).  PHF 9/9/2020   */
+body primo-explore::before
+{
+	content: "";
+	display: none;
+	background: transparent;
+	text-align: center;
+	padding: 0px;
+	width: 100%;
+	font-weight: normal;
+}
+
+/* Local Banner Styling PHF 9/9/2020 */
+prm-topbar, prm-top-bar-before, scsu-banner-component { background-color: #fbe63d; font-size:1.05em; z-index:1000; }
