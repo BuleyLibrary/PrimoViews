@@ -7,4 +7,4 @@ pipelines:
   default:
     - step:
         script:
-          - git push --mirror git@github.com:BuleyLibrary/libguides-code.git
+          - git push --mirror git@github.com:BuleyLibrary/PrimoViews.git
